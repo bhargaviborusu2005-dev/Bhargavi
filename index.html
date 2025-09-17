@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bhargavi Devi Sree Saranya Borusu</title>
+  <style>
+    :root {
+      --bg-color: #a950505a;
+      --text-color: #000000;
+      --card-bg: #f4f4f4;
+      --accent: #1400cc;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #eaeaea;
+      --card-bg: #1e1e1e;
+      --accent: #4d64f7;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--accent);
+    }
+    .toggle-btn {
+      background: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhargavi Devi Sree Saranya Borusu</h1>
+    <p>Computer Science Student | Python | Java | AI Enthusiast</p>
+    <button class="toggle-btn" onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Motivated computer science student with a strong foundation in Python, Java, and AI. Interested in applying problem-solving skills to develop innovative and practical solutions.</p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li><b>B.Sc Computer Science</b> - Aditya Degree College, Amalapuram (83.7%)</li>
+        <li><b>Intermediate MPC</b> - Veda Junior College, Tatipaka (63.9%)</li>
+        <li><b>SSC</b> - Children’s (EM) High School, Sompalli (92%)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <p>Python, C, SQL, Java (Basics), HTML, CSS, Operating Systems</p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <p><b>Email Spam Detection:</b> Built using Artificial Intelligence and Machine Learning algorithms in Python.</p>
+    </div>
+
+    <div class="card">
+      <h2>Achievements & Certificates</h2>
+      <ul>
+        <li>Project Recognition in AI & ML</li>
+        <li>Certified by Microsoft on Essentials of GenAI</li>
+        <li>Certified by Pearson in English Language</li>
+        <li>Python Essential 1 & 2 (Aditya University)</li>
+        <li>TCS iON - Youth Professional Certification</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Internship</h2>
+      <p>MERN Stack Internship at Adhoc Network Tech Company.</p>
+    </div>
+
+    <div class="card">
+      <h2>Languages</h2>
+      <p>English, Telugu</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:bhargaviborusu2005@gmail.com">bhargaviborusu2005@gmail.com</a></p>
+      <p>Phone: 8688235553</p>
+      <p>Address: 1-142, Baaram Vari Rice Millu, Razole, Konaseema District, Andhra Pradesh</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    }
+  </script>
+</body>
+</html>
